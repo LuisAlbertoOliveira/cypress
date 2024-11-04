@@ -4,5 +4,7 @@ describe('Teste automatizado', () => {
      // cy.visit('https://example.cypress.io')
 
       cy.contains('Imagens').click()
+
+      cy.url().should('include','/imghp')
     })
   })
