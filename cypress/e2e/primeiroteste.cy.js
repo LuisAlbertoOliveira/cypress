@@ -6,7 +6,7 @@ describe('Meu primeiro teste automatizado', () => {
       cy.contains('type').click() 
       //type é o que eu procuro na página. Se eu colocar hype(p.ex) o teste vai falhar pois não tem o link hype. O click() executa a ação de clicar nesse link encontrado.
 
-      cy.url().should('include','/commands/actions')
+     cy.url().should('include','/commands/actions')
       //o should possui 2 argumentos:include e a parte da url que voce deseja  procurar
 
       // Get an input, type into it
